@@ -1,9 +1,6 @@
-# Crispy
+# Crispy is a website boilerplate
 
-My boilerplate for new websites
-
-Check [index.html](https://github.com/gobrendan/crispy/blob/master/index.html) for the source or the breakdown below.
-
+## index.html
 
 ### doctype
 
@@ -80,3 +77,9 @@ Check [index.html](https://github.com/gobrendan/crispy/blob/master/index.html) f
 ### Analytics
 
       <script>(function(G,o,O,g,l){G.GoogleAnalyticsObject=O;G[O]||(G[O]=function(){(G[O].q=G[O].q||[]).push(arguments)});G[O].l=+new Date;g=o.createElement('script'),l=o.scripts[0];g.src='//www.google-analytics.com/analytics.js';l.parentNode.insertBefore(g,l)}(this,document,'ga'));ga('create','UA-XXXX-Y');ga('send','pageview')</script>
+
+
+
+## main.js
+
+## plugins.js

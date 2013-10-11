@@ -17,13 +17,14 @@
   <link rel="dns-prefetch" href="//platform.twitter.com">
 
   <!-- Site and file prefetch/prerender -->
-  <link rel="prefetch prerender" href="http://website.com/graphic.png" />
+  <!--
   <link rel="prefetch prerender" href="http://website.com" />
+  <link rel="prefetch prerender" href="http://website.com/graphic.png" />
+  -->
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/foundation-overrides.css">
   <link rel="stylesheet" href="css/helpers.css">
   <link rel="stylesheet" href="css/shame.css">
   <link rel="stylesheet" href="css/print.css">
@@ -55,10 +56,10 @@
   <!-- https://github.com/h5bp/lazyweb-requests/issues/42 -->
   
   <!-- jQuery plugins -->
-  <script src="js/plugins.js"></script>
+  <script defer src="js/plugins.js"></script>
 
   <!-- Custom JS -->
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 
   <!-- Google Analytics -->
   <!-- http://mathiasbynens.be/notes/async-analytics-snippet#universal-analytics -->

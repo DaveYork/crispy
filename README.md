@@ -61,23 +61,15 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-#### `defer` attribute
+#### `defer` and `async` attributes
 
-    <!-- Use "defer" attribute for interdependent JS files once after concatenation -->
-    <!-- https://github.com/h5bp/lazyweb-requests/issues/42 -->
-  
-#### `async` attribute
+(explanations)
 
-#### Dynamically-loaded
-
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script> <!-- plugin calls, custom JS -->
+#### Dynamically-load JS
 
 ### Analytics
 
     <script>(function(G,o,O,g,l){G.GoogleAnalyticsObject=O;G[O]||(G[O]=function(){(G[O].q=G[O].q||[]).push(arguments)});G[O].l=+new Date;g=o.createElement('script'),l=o.scripts[0];g.src='//www.google-analytics.com/analytics.js';l.parentNode.insertBefore(g,l)}(this,document,'ga'));ga('create','UA-XXXX-Y');ga('send','pageview')</script>
-
-
 
 ## main.js
 

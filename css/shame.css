@@ -1,25 +1,14 @@
-/* Shame.css (browser hacks) */
-
 /*
- * Help
+ * Shame
  * http://css-tricks.com/snippets/css/browser-specific-hacks
  * http://browserhacks.com
  */
 
-
-/* 
- * Hack Reference 
- */
-
 /* IE8 and below */
-
 .lt-ie8 {}
 
 /* IE7 and below */
-
 .lt-ie7 {}
-
-/***** Selector Hacks ******/
 
 /* IE6 and below */
 * html #uno  { color: red }
@@ -72,10 +61,6 @@ html[xmlns*=""]:root #trece  { color: red  }
  
 /* Firefox 3.0+ */
 #veinticinco,  x:-moz-any-link, x:default  { color: red  }
- 
- 
- 
-/***** Attribute Hacks ******/
  
 /* IE6 */
 #once { _color: blue }

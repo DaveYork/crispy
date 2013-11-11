@@ -16,16 +16,33 @@
   <link rel="dns-prefetch" href="//google-analytics.com">
   <link rel="dns-prefetch" href="//www.google-analytics.com">
   <link rel="dns-prefetch" href="//platform.twitter.com">
+  <link rel="dns-prefetch" href="//css-tricks.com">
 
-  <link rel="prefetch prerender" href="http://website.com" />
-  <link rel="prefetch prerender" href="http://website.com/graphic.png" />
+  <link rel="prefetch prerender" href="//website.com/style.css" />
+  <link rel="prefetch prerender" href="//website.com/logo.png" />
   -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/helpers.css">
-  <link rel="stylesheet" href="css/shame.css">
-  <link rel="stylesheet" href="css/print.css">
+  <!--http://realfavicongenerator.net/-->
+  <!-- http://mathiasbynens.be/notes/touch-icons-->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
+  <meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+
+  <link rel="stylesheet" href="css/styles.css">
 
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -34,13 +51,17 @@
       // For conditional logic in main.js
 			var oldIE = true;
   	</script>
+
+    <script type="text/javascript" src="js/vendor/selectivizr.min.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="css/no-script-fallbacks.css" />
+    </noscript>
+
     <script src="js/vendor/respond.min.js"></script>
   <![endif]-->
 
 </head>
 <body>
-
-
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
@@ -49,15 +70,18 @@
   <!-- 
   https://github.com/h5bp/lazyweb-requests/issues/42
   http://calendar.perfplanet.com/2010/the-truth-about-non-blocking-javascript/
+  http://css-tricks.com/thinking-async/
 
   <script type="text/javascript" defer src="crispy.js"></script>
   <script type="text/javascript" async src="spicy.js"></script>
 
   <script>
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "crispy.js";
-    document.getElementsByTagName("head")[0].appendChild(script);
+    (function(d, t) {
+      var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      g.src = '//third-party.com/resource.js';
+      s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
   </script>
   -->
   

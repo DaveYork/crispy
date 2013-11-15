@@ -1,1 +1,1 @@
-### Crispy is my vanilla boilerplate
+### Crispy is my starting point for new websites/prototypes
